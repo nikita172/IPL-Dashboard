@@ -18,6 +18,9 @@ export const TeamPage=()=> {
             fetchMatches();
         },[]
     )
+    if(!team || !team.teamName){
+        return <h1> Teamnot found</h1>
+    }
 
 
   return (
