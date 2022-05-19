@@ -10,7 +10,7 @@ export const TeamPage=()=> {
     useEffect(
         ()=>{
             const fetchMatches = async()=>{
-                const response = await fetch('http://localhost:8080/team/Rajasthan%20Royals');
+                const response = await fetch('http://localhost:8080/');
                 const data=await response.json();
                 setTeam(data);
             }
