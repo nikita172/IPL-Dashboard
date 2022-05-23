@@ -1,7 +1,7 @@
 
 import './App.css';
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { TeamPage } from './pages/TeamPage';
 import { MatchPage } from './pages/MatchPage';
 import { HomePage } from './pages/HomePage';
@@ -9,7 +9,7 @@ import { HomePage } from './pages/HomePage';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/teams/:teamName/matches/:year" element={<MatchPage />} />
           <Route path="/teams/:teamName" element={<TeamPage />} />
@@ -17,7 +17,7 @@ function App() {
 
           
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
